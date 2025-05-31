@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'outfit-thin';
+    src: url('fonts/Outfit-Thin.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'outfit-semibold';
+    src: url('fonts/Outfit-SemiBold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'outfit-regular';
+    src: url('fonts/Outfit-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'outfit-medium';
+    src: url('fonts/Outfit-Medium.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'outfit-light';
+    src: url('fonts/Outfit-Light.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'outfit-extrlight';
+    src: url('fonts/Outfit-ExtraLight.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'outfit-extrabold';
+    src: url('fonts/Outfit-ExtraBold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'outfit-bold';
+    src: url('fonts/Outfit-Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'outfit-black';
+    src: url('fonts/Outfit-Black.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}

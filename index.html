@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz Mania</title>
+  <link rel='stylesheet' href="./css/style.css">
+  <link rel='stylesheet' href="./css/font.css">
+
+</head>
+<body>
+  
+  <div class="quiz-container" id="start-page">
+    <img src="./images/QUIZMania.png" class="logo">
+    <h1>Welcome to Quiz Mania</h1>
+    <div class="start-btm-grid">
+      <h5 class="title-text">Please read all the rules about this quiz before you start.</h5>
+    <a  class="rules-btn" onclick="openRulesModal()" style="margin-bottom: 1rem;"> Quiz rules</a>
+    </div>
+
+<!-- Modal Structure -->
+<div id="rulesModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeRulesModal()">&times;</span>
+    <h2>Quiz Rules</h2>
+    <ul>
+      <p>10-Second Timer</p>
+      <li>Each question comes with a 10-second timer.</li>
+      <li> If you don’t answer within the time limit, the app will automatically move to the next question.</li>
+    </ul>
+    <ul>
+      <p>Manual Navigation</p>
+      <li>You can navigate to the next question manually before the timer expires.</li>
+      <li> Use the "Next" button to move ahead if you’re ready before the timer runs out.</li>
+        </ul>
+        <ul>
+          <p>Final Score and Performance Message</p>
+          <li> After all questions are answered, your final score will be displayed.</li>
+          <li>Based on your performance, you will receive a personalized message:</li>
+          <ul>
+            <li>Great job!: If you score above 80%.</li>
+            <li>Well done!: If you score between 60% and 80%.</li>
+            <li>Keep practicing!: If you score below 60%.</li>
+          </ul>
+            </ul>
+  </div>
+</div>
+    <input type="text" id="name" placeholder="Enter your full name" oninput="checkStartButtonState()" />
+    <h3 class="sub-title">Please select topic to continue</h3>
+    <div class="topic-btns">
+      <button onclick="startTopic('Javascript')">Javascript</button>
+      <button onclick="startTopic('Angular Basic')">Angular Basic</button>
+      <button onclick="startTopic('React.js Advance')">React.js Advance</button>
+      <button onclick="startTopic('Flutter')">Flutter</button>
+    </div>
+    <br />
+    <button id="startQuizBtn" onclick="startQuiz()" disabled>Start Quiz</button>
+  </div>
+
+  <div class="quiz-container" id="quiz-page" style="display:none;">
+    <img src="./images/QUIZMania.png" class="logo">
+    <button id="exitBtn" onclick="exitQuiz()">Exit Quiz</button>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <div class="timer" id="timer">Time left: 10s</div>
+    <h3 id="question"></h3>
+    <div class="options" id="options"></div>
+    <button id="nextBtn" onclick="submitAnswer()" disabled>Next</button>
+    <button id="skipBtn" onclick="skipQuestion()" style="display:none;">Skip This Question</button>
+  </div>
+
+  <div class="quiz-container" id="congrats-page" style="display:none;">
+    <h2>🎉 Congratulations, <span id="congrats-user-name"></span>!</h2>
+    <div class="circular-progress" id="congrats-progress-circle">
+      <span id="congrats-progress-text">0%</span>
+    </div>
+    <p>Your score: <span id="congrats-final-score"></span></p>
+    <p>Correct: <span id="congrats-correct-count"></span></p>
+    <p>Wrong: <span id="congrats-wrong-count"></span></p>
+    <p>Unanswered: <span id="congrats-unanswered-count"></span></p>
+    <button onclick="resetQuiz()">Retake Quiz</button>
+  </div>
+
+  <div class="quiz-container" id="result-page" style="display:none;">
+    <h2>Keep Practicing, <span id="user-name"></span>!</h2>
+    <div class="circular-progress" id="progress-circle">
+      <span id="progress-text">0%</span>
+    </div>
+    <p>Your score: <span id="final-score"></span></p>
+    <p>Correct: <span id="correct-count"></span></p>
+    <p>Wrong: <span id="wrong-count"></span></p>
+    <p>Unanswered: <span id="unanswered-count"></span></p>
+    <button onclick="resetQuiz()">Retake Quiz</button>
+  </div>
+
+  <script src='./js/script.js'></script>
+</body>
+</html>
