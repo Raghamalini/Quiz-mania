@@ -1,5 +1,5 @@
 **Quiz App**
-A dynamic, topic-based quiz application built with JavaScript. Users can select quiz topics like General Knowledge, Science, Math, and History, answer timed questions, and view a visual score result with a circular progress indicator.
+A dynamic, topic-based quiz application built with JavaScript. Users can select quiz topics like Javascript, C++, Python, Java answer timed questions, and view a visual score result with a circular progress indicator.
 
 **Features**
 🔘 Topic Selection – Choose from multiple categories before starting the quiz.
